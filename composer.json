@@ -1,5 +1,5 @@
 {
-    "name": "arxeiss/phpcs-coding-standards",
+    "name": "arxeiss/coding-standards",
     "description": "Custom PHP CodeSniffer ruleset",
     "license": "MIT",
 	"type": "phpcodesniffer-standard",
