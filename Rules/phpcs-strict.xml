@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Arxeiss PHP Standard - Strict rules">
+
+    <config name="installed_paths" value="../../slevomat/coding-standard"/>
+
+    <!-- Squiz -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar"> <!-- Double quote string cannot contains $variables -->
+        <message>Variable "%s" not allowed in double quoted string; use sprintf() instead</message>
+    </rule>
+
+    <!-- Slevomat -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"> <!-- If native type hints does enough, function comment can be useless -->
+        <type>warning</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/> <!-- Disallow use == or != and must use === and !== -->
+    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/> <!-- Disable use of $i++ must use $i += 1 etc.. -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"> <!-- File must have declare strict types with correct spacing -->
+        <properties>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/> <!-- Disable long type hints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> <!-- Parameter must be nullable if has null default value -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/> <!-- Check correct type hints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/> <!-- Correct spacing for parameter type hints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/> <!-- Check type hint for class property -->
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint.UselessAnnotation">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing"/> <!-- Correct spacing for property type hints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/> <!-- Correct return type hint -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation">
+        <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/> <!-- Disable comments for constants -->
+
+</ruleset>

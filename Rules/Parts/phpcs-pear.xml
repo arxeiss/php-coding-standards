@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Arxeiss PHP Standard - PEAR rules">
+    <rule ref="PEAR.Commenting.InlineComment"/> <!-- Disable PERL comments style ie #  -->
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfter"/> <!-- No space after function comment -->
+    <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch"/> <!-- Check different names in method and in doc block -->
+    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/> <!-- Correct formatting when chaining method calls -->
+</ruleset>
+

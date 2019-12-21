@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Arxeiss PHP Standard - Generic rules">
+    <rule ref="Generic.Arrays.ArrayIndent"> <!-- Correct indentation in array -->
+        <exclude name="Generic.Arrays.ArrayIndent.CloseBraceNotNewLine"/><!-- multiline items causes evaluation as multiline array https://github.com/squizlabs/PHP_CodeSniffer/issues/1791 -->
+    </rule>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/> <!-- Disable array() use [] -->
+    <rule ref="Generic.Classes.DuplicateClassName"/> <!-- Disable duplicate Class names within project -->
+    <rule ref="Generic.Commenting.DocComment"> <!-- Correct alignment inside doc block -->
+        <exclude name="Generic.Commenting.DocComment.MissingShort"/> <!-- Comment is not required -->
+        <exclude name="Generic.Commenting.DocComment.ContentAfterOpen"/> <!-- Exclude to enable single line property annotation -->
+        <exclude name="Generic.Commenting.DocComment.ContentBeforeClose"/> <!-- Exclude to enable single line property annotation -->
+    </rule>
+    <rule ref="Generic.Commenting.DocComment.NonParamGroup"> <!-- annotations can be divided into groups by empty lines -->
+        <severity>0</severity>
+    </rule>
+    <rule ref="Generic.Commenting.DocComment.TagsNotGrouped"> <!-- param and return and other can be grouped -->
+        <severity>0</severity>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.AssignmentInCondition"/> <!-- Cannot assign variable in if condition (...) -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"> <!-- Does not allow empty statement -->
+        <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch"/><!-- empty catch statements are allowed - Squiz check comment inside empty catch -->
+    </rule>
+    <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/> <!-- for without iterators can be while -->
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/> <!-- Disable if(true) etc... -->
+    <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/> <!-- When final is for class and for method again -->
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/> <!-- When method only calls parent, nothing more -->
+    <rule ref="Generic.Formatting.NoSpaceAfterCast"/> <!-- Disable space after cast, ie (int) $var -->
+    <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/> <!-- No chars before PHP opening tag  -->
+    <rule ref="Generic.PHP.DeprecatedFunctions"/> <!-- Disable deprecated function -->
+    <rule ref="Generic.PHP.ForbiddenFunctions"> <!-- Ban listed functions -->
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="sizeof" value="count"/>
+                <element key="delete" value="unset"/>
+                <element key="print" value="echo"/>
+                <element key="create_function" value="null"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="Generic.PHP.NoSilencedErrors"/> <!-- Disable @ to silence PHP error -->
+    <rule ref="Generic.Strings.UnnecessaryStringConcat"> <!-- Unnecessary string concat id disabled: 'A'.'b' etc-->
+        <properties>
+            <property name="allowMultiline" value="true"/> <!-- But splitting into multiple lines is allowed -->
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing"> <!-- No extra spaces inside parentheses -->
+        <properties>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/> <!-- Must be space after language construct (return, throw, use etc...) -->
+    <rule ref="Generic.WhiteSpace.SpreadOperatorSpacingAfter"/> <!-- No space after ... (spread) operator -->
+</ruleset>
