@@ -1,0 +1,22 @@
+# OS generated files #
+######################
+.DS_Store
+._*
+Icon
+*.db
+/vendor
+*.log
+composer.phar
+
+### OSX ###
+.DS_Store
+
+### Netbeans ###
+nbproject
+
+### PhpStorm ###
+.idea
+
+### Sublime Text ###
+*.sublime-*
+!*.sublime-project

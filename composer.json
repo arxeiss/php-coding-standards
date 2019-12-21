@@ -1,0 +1,17 @@
+{
+    "name": "arxeiss/phpcs-coding-standards",
+    "description": "Custom PHP CodeSniffer ruleset",
+    "license": "MIT",
+	"type": "phpcodesniffer-standard",
+    "authors": [
+        {
+            "name": "Pavel Kutáč",
+            "email": "pavel.kutac@gmail.com",
+            "homepage" : "https://www.kutac.cz"
+        }
+    ],
+    "require": {
+    	"php": "^7.1",
+        "slevomat/coding-standard": "^6.0"
+    }
+}
