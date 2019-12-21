@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="SunOutdoor App Custom Ruleset">
+
+    <!-- Check folders -->
+    <file>./app</file>
+
+    <arg name="basepath" value="."/> <!-- Strip file basepath from report -->
+    <arg name="colors"/> <!-- Show colors -->
+    <arg value="p"/> <!-- Display progress in report -->
+    <arg value="s"/> <!-- Display sniff codes in report -->
+
+    <rule ref="./vendor/arxeiss/coding-standards/Rules/phpcs.xml">
+        <!-- Optionally exclude some rules -->
+        <exclude name="Generic.Files.LineLength.MaxExceeded"/>
+        <exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
+
+        <!-- trailing comma in function call is supported in PHP 7.3 and above, exclude if needed -->
+        <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
+    </rule>
+
+    <!-- Add set of strict rules if needed -->
+    <!--
+        <rule ref="./vendor/arxeiss/coding-standards/Rules/phpcs-strict.xml">
+        </rule>
+    -->
+</ruleset>

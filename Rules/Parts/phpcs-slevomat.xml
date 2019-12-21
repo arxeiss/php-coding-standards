@@ -36,6 +36,7 @@
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/> <!-- Check unreachable catch blocks -->
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/> <!-- \Exception should be \Throwable -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/> <!-- Use static closure if not using $this -->
+    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/> <!-- Check unused variable in use() for closure -->
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/> <!-- Namespace use sort alphabetically -->
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/> <!-- Group use namespaces declaration is disallowed -->
