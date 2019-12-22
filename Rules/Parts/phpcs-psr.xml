@@ -2,6 +2,7 @@
 <ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Arxeiss PHP Standard - PSR rules">
     <!-- Include the whole PSR-2 and PSR-12 standard -->
     <rule ref="PSR2">
+        <exclude name="Generic.WhiteSpace.DisallowTabIndent"/> <!-- Is handled later, someone want tabs indentation -->
         <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/><!-- we want to put first expression of multiline condition on next line -->
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/> <!-- Handled by Slevomat rules -->
     </rule>

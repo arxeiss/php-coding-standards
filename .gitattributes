@@ -1,3 +1,4 @@
 * text eol=lf
 CHANGELOG.md export-ignore
 LICENCE export-ignore
+phpcs.example.xml export-ignore

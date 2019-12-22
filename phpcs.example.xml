@@ -9,10 +9,10 @@
     <arg value="p"/> <!-- Display progress in report -->
     <arg value="s"/> <!-- Display sniff codes in report -->
 
-    <rule ref="./vendor/arxeiss/coding-standards/Rules/phpcs.xml">
+    <!-- Or include phpcs-tabs.xml for tabs indentation -->
+    <rule ref="./vendor/arxeiss/coding-standards/Rules/phpcs-spaces.xml">
         <!-- Optionally exclude some rules -->
         <exclude name="Generic.Files.LineLength.MaxExceeded"/>
-        <exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
 
         <!-- trailing comma in function call is supported in PHP 7.3 and above, exclude if needed -->
