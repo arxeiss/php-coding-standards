@@ -4,7 +4,9 @@
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
     <!-- Squiz -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage"/> <!-- Insert again, as the next rule override everything from previous file -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar"> <!-- Double quote string cannot contains $variables -->
+        <severity>5</severity>
         <message>Variable "%s" not allowed in double quoted string; use sprintf() instead</message>
     </rule>
 
