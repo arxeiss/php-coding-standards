@@ -3,6 +3,10 @@
 
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
+    <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch"> <!-- Causing conflicts with stricter Slevomat rules -->
+        <severity>0</severity>
+    </rule>
+
     <!-- Squiz -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage"/> <!-- Insert again, as the next rule override everything from previous file -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar"> <!-- Double quote string cannot contains $variables -->
