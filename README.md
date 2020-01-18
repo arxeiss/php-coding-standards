@@ -1,6 +1,6 @@
 # PHP CodeSniffer - Custom standard ruleset
 
-Custom ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with [Slevomat sniffs](https://github.com/slevomat/coding-standard). Ruleset is based on *PSR2 + PSR12** with additional rules, more detailed list is below. Ruleset is possible to use with **space indentation** and also **tabs indentation**.
+Custom ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with [Slevomat sniffs](https://github.com/slevomat/coding-standard). Ruleset is based on **PSR2 + PSR12** with additional rules, more detailed list is below. Ruleset is possible to use with **space indentation** and also **tabs indentation**.
 
 ## Installation and running
 
@@ -167,6 +167,7 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
 
 ### Squiz (34 sniffs)
  - Squiz.Arrays.ArrayBracketSpacing
+ - Squiz.Arrays.ArrayDeclaration
  - Squiz.Classes.ClassFileName
  - Squiz.Classes.SelfMemberReference
  - Squiz.Classes.ValidClassName
