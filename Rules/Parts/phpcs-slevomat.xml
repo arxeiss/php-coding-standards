@@ -4,21 +4,31 @@
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/> <!-- Multiline array must have trailing comma -->
+    <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
+    <rule ref="SlevomatCodingStandard.Classes.ConstantSpacing"> <!-- Proper spacing for constants with and without docblock -->
+        <properties>
+            <property name="maxLinesCountBeforeWithoutComment" value="0"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants"/> <!-- Disable static:: for constants -->
-    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/> <!-- Replace old get_called_class() etc via modern constructs -->
-    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/> <!-- Replace static:: into self:: when class/method is final -->
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"> <!-- No empty lines in the start and end of class -->
         <properties>
             <property name="linesCountAfterOpeningBrace" value="0"/>
             <property name="linesCountBeforeClosingBrace" value="0"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/> <!-- Replace old get_called_class() etc via modern constructs -->
+    <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing"/> <!-- Enforce empty lines around parent method call -->
+    <rule ref="SlevomatCodingStandard.Classes.PropertySpacing"/> <!-- Proper spacing for property with and without docblock -->
+    <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/> <!-- Method signature should be multiline if exceed 120 chars -->
+    <rule ref="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/> <!-- Method signature should be single line if does not exceed 120 chars -->
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing"> <!-- Spacing around use traits -->
         <properties>
             <property name="linesCountBeforeFirstUse" value="0"/>
             <property name="linesCountAfterLastUseWhenLastInClass" value="0"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/> <!-- Replace static:: into self:: when class/method is final -->
     <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/> <!-- Disable empty comments -->
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/> <!-- Check valid inline @var doc -->
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/> <!-- Use single line comment for property -->
@@ -35,6 +45,7 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/> <!-- Use null coalesce ?? instead of ternary when possible -->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/> <!-- Check unreachable catch blocks -->
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/> <!-- \Exception should be \Throwable -->
+    <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/> <!-- Empty function must have a comment why is empty -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/> <!-- Use static closure if not using $this -->
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/> <!-- Check unused variable in use() for closure -->
@@ -64,6 +75,7 @@
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/> <!-- Disable useless namespace alias -->
     <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/> <!-- Disable write number with _ between thousands etc -->
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/> <!-- Empty lines around use statements -->
+    <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/> <!-- No spaces after - (minus) when is meant as negative number -->
     <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/> <!-- In listed function ... must not be used -->
     <rule ref="SlevomatCodingStandard.PHP.ShortList"/> <!-- Disable list() use [] -->
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/> <!-- Enforces using shorthand cast operators integer -> int -->

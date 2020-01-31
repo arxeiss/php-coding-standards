@@ -1,5 +1,8 @@
 # PHP CodeSniffer - Custom standard ruleset
 
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/arxeiss/coding-standards)](https://packagist.org/packages/arxeiss/coding-standards)
+[![Packagist Version](https://img.shields.io/packagist/v/arxeiss/coding-standards)](https://packagist.org/packages/arxeiss/coding-standards)
+
 Custom ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with [Slevomat sniffs](https://github.com/slevomat/coding-standard). Ruleset is based on **PSR2 + PSR12** with additional rules, more detailed list is below. Ruleset is possible to use with **space indentation** and also **tabs indentation**.
 
 ## Installation and running
@@ -127,11 +130,17 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - PSR2.Namespaces.NamespaceDeclaration
  - PSR2.Namespaces.UseDeclaration
 
-### SlevomatCodingStandard (36 sniffs)
+### SlevomatCodingStandard (44 sniffs)
  - SlevomatCodingStandard.Arrays.TrailingArrayComma
+ - SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
+ - SlevomatCodingStandard.Classes.ConstantSpacing
  - SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants
  - SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
  - SlevomatCodingStandard.Classes.ModernClassNameReference
+ - SlevomatCodingStandard.Classes.ParentCallSpacing
+ - SlevomatCodingStandard.Classes.PropertySpacing
+ - SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
+ - SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
  - SlevomatCodingStandard.Classes.TraitUseSpacing
  - SlevomatCodingStandard.Classes.UselessLateStaticBinding
  - SlevomatCodingStandard.Commenting.EmptyComment
@@ -143,6 +152,7 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
  - SlevomatCodingStandard.Exceptions.DeadCatch
  - SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
+ - SlevomatCodingStandard.Functions.DisallowEmptyFunction
  - SlevomatCodingStandard.Functions.StaticClosure
  - SlevomatCodingStandard.Functions.TrailingCommaInCall
  - SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
@@ -160,6 +170,7 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - SlevomatCodingStandard.Namespaces.UseSpacing
  - SlevomatCodingStandard.Namespaces.UselessAlias
  - SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator
+ - SlevomatCodingStandard.Operators.NegationOperatorSpacing
  - SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking
  - SlevomatCodingStandard.PHP.ShortList
  - SlevomatCodingStandard.PHP.TypeCast
@@ -195,7 +206,6 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - Squiz.WhiteSpace.CastSpacing
  - Squiz.WhiteSpace.ControlStructureSpacing
  - Squiz.WhiteSpace.FunctionSpacing
- - Squiz.WhiteSpace.MemberVarSpacing
  - Squiz.WhiteSpace.ObjectOperatorSpacing
  - Squiz.WhiteSpace.ScopeClosingBrace
  - Squiz.WhiteSpace.ScopeKeywordSpacing

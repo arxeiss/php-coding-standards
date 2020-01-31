@@ -1,7 +1,7 @@
 {
     "name": "arxeiss/coding-standards",
     "description": "Custom PHP CodeSniffer ruleset",
-    "license": "MIT",
+    "license": "Apache-2.0",
 	"type": "phpcodesniffer-standard",
     "authors": [
         {

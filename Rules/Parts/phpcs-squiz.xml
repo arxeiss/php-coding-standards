@@ -52,11 +52,6 @@
             <property name="spacingAfterLast" value="0"/>
         </properties>
     </rule>
-    <rule ref="Squiz.WhiteSpace.MemberVarSpacing"> <!-- Spaces between Class members -->
-        <properties>
-            <property name="spacingBeforeFirst" value="0"></property>
-        </properties>
-    </rule>
     <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"> <!-- No spaces around object operator -> and :: -->
         <properties>
             <property name="ignoreNewlines" value="true"/>
