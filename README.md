@@ -130,11 +130,13 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - PSR2.Namespaces.NamespaceDeclaration
  - PSR2.Namespaces.UseDeclaration
 
-### SlevomatCodingStandard (44 sniffs)
- - SlevomatCodingStandard.Arrays.TrailingArrayComma
+### SlevomatCodingStandard (62 sniffs)
  - SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
+ - SlevomatCodingStandard.Arrays.TrailingArrayComma
  - SlevomatCodingStandard.Classes.ConstantSpacing
  - SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants
+ - SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
+ - SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
  - SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
  - SlevomatCodingStandard.Classes.ModernClassNameReference
  - SlevomatCodingStandard.Classes.ParentCallSpacing
@@ -146,12 +148,14 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - SlevomatCodingStandard.Commenting.EmptyComment
  - SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration
  - SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment
+ - SlevomatCodingStandard.Commenting.UselessFunctionDocComment
  - SlevomatCodingStandard.ControlStructures.EarlyExit
  - SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing
  - SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
  - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
  - SlevomatCodingStandard.Exceptions.DeadCatch
  - SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
+ - SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
  - SlevomatCodingStandard.Functions.DisallowEmptyFunction
  - SlevomatCodingStandard.Functions.StaticClosure
  - SlevomatCodingStandard.Functions.TrailingCommaInCall
@@ -170,11 +174,25 @@ There is no really good documentation for sniffs. I wrote one sentence explanati
  - SlevomatCodingStandard.Namespaces.UseSpacing
  - SlevomatCodingStandard.Namespaces.UselessAlias
  - SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator
+ - SlevomatCodingStandard.Operators.DisallowEqualOperators
+ - SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators
  - SlevomatCodingStandard.Operators.NegationOperatorSpacing
+ - SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall
  - SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking
  - SlevomatCodingStandard.PHP.ShortList
  - SlevomatCodingStandard.PHP.TypeCast
+ - SlevomatCodingStandard.TypeHints.DeclareStrictTypes
+ - SlevomatCodingStandard.TypeHints.LongTypeHints
+ - SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue
+ - SlevomatCodingStandard.TypeHints.ParameterTypeHint
+ - SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
+ - SlevomatCodingStandard.TypeHints.PropertyTypeHint
+ - SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
+ - SlevomatCodingStandard.TypeHints.ReturnTypeHint
+ - SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
+ - SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable
  - SlevomatCodingStandard.Variables.UnusedVariable
+ - SlevomatCodingStandard.Whitespaces.DuplicateSpaces
 
 ### Squiz (34 sniffs)
  - Squiz.Arrays.ArrayBracketSpacing

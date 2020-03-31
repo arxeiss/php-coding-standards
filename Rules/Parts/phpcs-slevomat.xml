@@ -11,6 +11,8 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants"/> <!-- Disable static:: for constants -->
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/> <!-- Cannot be more constants on the same row -->
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/> <!-- Cannot be more properties on the same row -->
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"> <!-- No empty lines in the start and end of class -->
         <properties>
             <property name="linesCountAfterOpeningBrace" value="0"/>
@@ -45,6 +47,7 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/> <!-- Use null coalesce ?? instead of ternary when possible -->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/> <!-- Check unreachable catch blocks -->
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/> <!-- \Exception should be \Throwable -->
+    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/> <!-- Spacing around PHP 7.4 arrow functions -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/> <!-- Empty function must have a comment why is empty -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/> <!-- Use static closure if not using $this -->
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
@@ -76,8 +79,16 @@
     <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/> <!-- Disable write number with _ between thousands etc -->
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/> <!-- Empty lines around use statements -->
     <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/> <!-- No spaces after - (minus) when is meant as negative number -->
+    <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/> <!-- Cannot call directly __invoke method -->
     <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/> <!-- In listed function ... must not be used -->
     <rule ref="SlevomatCodingStandard.PHP.ShortList"/> <!-- Disable list() use [] -->
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/> <!-- Enforces using shorthand cast operators integer -> int -->
+    <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/> <!-- Global variables are prohibited -->
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/> <!-- Try to detect unused variables -->
+    <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"> <!-- Detect duplicate spaces except assignment and comments -->
+        <properties>
+            <property name="ignoreSpacesBeforeAssignment" value="true"/>
+            <property name="ignoreSpacesInAnnotation" value="true"/>
+        </properties>
+    </rule>
 </ruleset>

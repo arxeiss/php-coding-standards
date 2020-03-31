@@ -1,5 +1,39 @@
 # Changelog
 
+## v0.5.x
+
+### v0.5.0
+
+> Requires Slevomat coding standards 6.2 or higher
+
+**Added rules:**
+- SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
+- SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
+- SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
+- SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall
+- SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable
+- SlevomatCodingStandard.Whitespaces.DuplicateSpaces
+
+---
+
+## v0.4.0 - v0.4.1
+
+**Added rules:**
+
+- SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
+- SlevomatCodingStandard.Classes.ConstantSpacing
+- SlevomatCodingStandard.Classes.ParentCallSpacing
+- SlevomatCodingStandard.Classes.PropertySpacing
+- SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
+- SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
+- SlevomatCodingStandard.Functions.DisallowEmptyFunction
+- SlevomatCodingStandard.Operators.NegationOperatorSpacing
+
+**Removed rule:**
+- Squiz.WhiteSpace.MemberVarSpacing
+
+---
+
 ## v0.3.x
 
 ### v0.3.0

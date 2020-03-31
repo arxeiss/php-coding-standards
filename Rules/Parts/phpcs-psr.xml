@@ -5,6 +5,7 @@
         <exclude name="Generic.WhiteSpace.DisallowTabIndent"/> <!-- Is handled later, someone want tabs indentation -->
         <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/><!-- we want to put first expression of multiline condition on next line -->
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/> <!-- Handled by Slevomat rules -->
+        <exclude name="PSR2.Classes.PropertyDeclaration.Multiple"/> <!-- Handled by Slevomat rules -->
     </rule>
     <rule ref="PSR12">
         <exclude name="PSR12.Traits.UseDeclaration.MultipleImport"/> <!-- Single use can import multiple traits -->
