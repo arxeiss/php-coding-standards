@@ -1,8 +1,39 @@
 # Changelog
 
-## v0.5.x
+## v0.6.x
 
-### v0.5.0
+### v0.6.0 - NOT RELEASED YET
+
+> Requires Slevomat coding standards 6.3 or higher
+
+**Added rules:**
+ - Generic.Files.InlineHTML
+ - Generic.NamingConventions.ConstructorName
+ - PEAR.Formatting.MultiLineAssignment
+ - SlevomatCodingStandard.Classes.UnusedPrivateElements
+ - SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch
+ - SlevomatCodingStandard.ControlStructures.NewWithParentheses
+ - SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator
+ - SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator
+ - SlevomatCodingStandard.Operators.SpreadOperatorSpacing
+ - SlevomatCodingStandard.PHP.ReferenceSpacing
+ - SlevomatCodingStandard.PHP.UselessSemicolon
+ - SlevomatCodingStandard.PHP.UselessParentheses
+ - SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable
+
+**Added strict rules:**
+ - Generic.Formatting.SpaceAfterNot
+ - SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
+ - SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace
+ - SlevomatCodingStandard.Commenting.ForbiddenAnnotations
+ - SlevomatCodingStandard.ControlStructures.AssignmentInCondition
+ - SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator
+ - SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn
+ - SlevomatCodingStandard.ControlStructures.UselessTernaryOperator
+ - SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition
+ - Squiz.PHP.CommentedOutCode
+
+## v0.5.0
 
 > Requires Slevomat coding standards 6.2 or higher
 

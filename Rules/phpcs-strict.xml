@@ -3,6 +3,14 @@
 
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
+    <!-- Generic -->
+    <rule ref="Generic.Formatting.SpaceAfterNot"> <!-- Checks there is 0 lines after ! operator -->
+        <properties>
+            <property name="spacing" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- PEAR -->
     <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch"> <!-- Causing conflicts with stricter Slevomat rules -->
         <severity>0</severity>
     </rule>
@@ -13,11 +21,34 @@
         <severity>5</severity>
         <message>Variable "%s" not allowed in double quoted string; use sprintf() instead</message>
     </rule>
+    <rule ref="Squiz.PHP.CommentedOutCode"/> <!-- Disable commenting code -->
 
     <!-- Slevomat -->
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/> <!-- Check using of $a[] without specifying $a is array -->
+    <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/> <!-- Check no empty spaces in array defining in the beginning and end -->
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"> <!-- Disable listed annotations -->
+        <properties>
+            <property name="forbiddenAnnotations" type="array">
+                <element value="@author"/>
+                <element value="@created"/>
+                <element value="@copyright"/>
+                <element value="@license"/>
+                <element value="@package"/>
+                <element value="@version"/>
+            </property>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"> <!-- If native type hints does enough, function comment can be useless -->
         <type>warning</type>
     </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/> <!-- Only comparison in condition, no assignment -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/> <!-- Require ?: if possible -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"> <!-- Check usage of if with only return true/false followed by return true/false -->
+        <properties>
+            <property name="assumeAllConditionExpressionsAreAlreadyBoolean" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/> <!-- Check when ternary operator can be shortened -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/> <!-- Disallow use == or != and must use === and !== -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/> <!-- Disable use of $i++ must use $i += 1 etc.. -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"> <!-- File must have declare strict types with correct spacing -->
@@ -28,6 +59,7 @@
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/> <!-- Disable long type hints -->
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> <!-- Parameter must be nullable if has null default value -->
+    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/> <!-- In doc block |null must be last -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/> <!-- Check correct type hints -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
         <severity>0</severity>

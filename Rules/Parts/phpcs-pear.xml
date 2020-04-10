@@ -3,6 +3,7 @@
     <rule ref="PEAR.Commenting.InlineComment"/> <!-- Disable PERL comments style ie #  -->
     <rule ref="PEAR.Commenting.FunctionComment.SpacingAfter"/> <!-- No space after function comment -->
     <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch"/> <!-- Check different names in method and in doc block -->
+    <rule ref="PEAR.Formatting.MultiLineAssignment"/> <!-- Multiline assignment must have = on new line -->
     <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/> <!-- Correct formatting when chaining method calls -->
 </ruleset>
 

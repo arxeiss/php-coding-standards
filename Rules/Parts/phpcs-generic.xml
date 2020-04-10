@@ -24,7 +24,9 @@
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/> <!-- Disable if(true) etc... -->
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/> <!-- When final is for class and for method again -->
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/> <!-- When method only calls parent, nothing more -->
+    <rule ref="Generic.Files.InlineHTML"/> <!-- Disables Inline HTML inside file -->
     <rule ref="Generic.Formatting.NoSpaceAfterCast"/> <!-- Disable space after cast, ie (int) $var -->
+    <rule ref="Generic.NamingConventions.ConstructorName"/> <!-- Check of usage old constructor naming -->
     <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/> <!-- No chars before PHP opening tag  -->
     <rule ref="Generic.PHP.DeprecatedFunctions"/> <!-- Disable deprecated function -->
     <rule ref="Generic.PHP.ForbiddenFunctions"> <!-- Ban listed functions -->

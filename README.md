@@ -48,184 +48,20 @@ Later more additional rules can be added. See *phpcs.example.xml*.
 
 ## Included sniffs
 
+See [SniffList](SniffsList.md)<br>
 There is no really good documentation for sniffs. I wrote one sentence explanation for each used sniff into XML files.
 
-### Generic (34 sniffs)
- - Generic.Arrays.ArrayIndent
- - Generic.Arrays.DisallowLongArraySyntax
- - Generic.Classes.DuplicateClassName
- - Generic.CodeAnalysis.AssignmentInCondition
- - Generic.CodeAnalysis.EmptyStatement
- - Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
- - Generic.CodeAnalysis.UnconditionalIfStatement
- - Generic.CodeAnalysis.UnnecessaryFinalModifier
- - Generic.CodeAnalysis.UselessOverridingMethod
- - Generic.Commenting.DocComment
- - Generic.ControlStructures.InlineControlStructure
- - Generic.Files.ByteOrderMark
- - Generic.Files.LineEndings
- - Generic.Files.LineLength
- - Generic.Formatting.DisallowMultipleStatements
- - Generic.Formatting.NoSpaceAfterCast
- - Generic.Functions.FunctionCallArgumentSpacing
- - Generic.NamingConventions.UpperCaseConstantName
- - Generic.PHP.CharacterBeforePHPOpeningTag
- - Generic.PHP.DeprecatedFunctions
- - Generic.PHP.DisallowAlternativePHPTags
- - Generic.PHP.DisallowShortOpenTag
- - Generic.PHP.ForbiddenFunctions
- - Generic.PHP.LowerCaseConstant
- - Generic.PHP.LowerCaseKeyword
- - Generic.PHP.LowerCaseType
- - Generic.PHP.NoSilencedErrors
- - Generic.Strings.UnnecessaryStringConcat
- - Generic.WhiteSpace.ArbitraryParenthesesSpacing
- - Generic.WhiteSpace.DisallowSpaceIndent - *Depends on selected indentation configuration*
- - Generic.WhiteSpace.DisallowTabIndent - *Depends on selected indentation configuration*
- - Generic.WhiteSpace.IncrementDecrementSpacing
- - Generic.WhiteSpace.LanguageConstructSpacing
- - Generic.WhiteSpace.ScopeIndent
- - Generic.WhiteSpace.SpreadOperatorSpacingAfter
+### More suggested
 
-### PEAR (4 sniffs)
- - PEAR.Commenting.FunctionComment
- - PEAR.Commenting.InlineComment
- - PEAR.Functions.ValidDefaultValue
- - PEAR.WhiteSpace.ObjectOperatorIndent
+#### Check that Namespace matches file structure
+This is used from my own blog in Laravel, where main folder `app` is `BlogApp` namespace.
 
-### PSR1 (3 sniffs)
- - PSR1.Classes.ClassDeclaration
- - PSR1.Files.SideEffects
- - PSR1.Methods.CamelCapsMethodName
-
-### PSR12 (16 sniffs)
- - PSR12.Classes.AnonClassDeclaration
- - PSR12.Classes.ClassInstantiation
- - PSR12.Classes.ClosingBrace
- - PSR12.ControlStructures.BooleanOperatorPlacement
- - PSR12.ControlStructures.ControlStructureSpacing
- - PSR12.Files.DeclareStatement
- - PSR12.Files.FileHeader
- - PSR12.Files.ImportStatement
- - PSR12.Files.OpenTag
- - PSR12.Functions.NullableTypeDeclaration
- - PSR12.Functions.ReturnTypeDeclaration
- - PSR12.Keywords.ShortFormTypeKeywords
- - PSR12.Namespaces.CompoundNamespaceDepth
- - PSR12.Operators.OperatorSpacing
- - PSR12.Properties.ConstantVisibility
- - PSR12.Traits.UseDeclaration
-
-### PSR2 (12 sniffs)
- - PSR2.Classes.ClassDeclaration
- - PSR2.Classes.PropertyDeclaration
- - PSR2.ControlStructures.ControlStructureSpacing
- - PSR2.ControlStructures.ElseIfDeclaration
- - PSR2.ControlStructures.SwitchDeclaration
- - PSR2.Files.ClosingTag
- - PSR2.Files.EndFileNewline
- - PSR2.Methods.FunctionCallSignature
- - PSR2.Methods.FunctionClosingBrace
- - PSR2.Methods.MethodDeclaration
- - PSR2.Namespaces.NamespaceDeclaration
- - PSR2.Namespaces.UseDeclaration
-
-### SlevomatCodingStandard (62 sniffs)
- - SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
- - SlevomatCodingStandard.Arrays.TrailingArrayComma
- - SlevomatCodingStandard.Classes.ConstantSpacing
- - SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants
- - SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
- - SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
- - SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
- - SlevomatCodingStandard.Classes.ModernClassNameReference
- - SlevomatCodingStandard.Classes.ParentCallSpacing
- - SlevomatCodingStandard.Classes.PropertySpacing
- - SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
- - SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
- - SlevomatCodingStandard.Classes.TraitUseSpacing
- - SlevomatCodingStandard.Classes.UselessLateStaticBinding
- - SlevomatCodingStandard.Commenting.EmptyComment
- - SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration
- - SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment
- - SlevomatCodingStandard.Commenting.UselessFunctionDocComment
- - SlevomatCodingStandard.ControlStructures.EarlyExit
- - SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing
- - SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
- - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
- - SlevomatCodingStandard.Exceptions.DeadCatch
- - SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
- - SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
- - SlevomatCodingStandard.Functions.DisallowEmptyFunction
- - SlevomatCodingStandard.Functions.StaticClosure
- - SlevomatCodingStandard.Functions.TrailingCommaInCall
- - SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
- - SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
- - SlevomatCodingStandard.Namespaces.DisallowGroupUse
- - SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions
- - SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants
- - SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions
- - SlevomatCodingStandard.Namespaces.NamespaceDeclaration
- - SlevomatCodingStandard.Namespaces.NamespaceSpacing
- - SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly
- - SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile
- - SlevomatCodingStandard.Namespaces.UnusedUses
- - SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash
- - SlevomatCodingStandard.Namespaces.UseSpacing
- - SlevomatCodingStandard.Namespaces.UselessAlias
- - SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator
- - SlevomatCodingStandard.Operators.DisallowEqualOperators
- - SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators
- - SlevomatCodingStandard.Operators.NegationOperatorSpacing
- - SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall
- - SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking
- - SlevomatCodingStandard.PHP.ShortList
- - SlevomatCodingStandard.PHP.TypeCast
- - SlevomatCodingStandard.TypeHints.DeclareStrictTypes
- - SlevomatCodingStandard.TypeHints.LongTypeHints
- - SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue
- - SlevomatCodingStandard.TypeHints.ParameterTypeHint
- - SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
- - SlevomatCodingStandard.TypeHints.PropertyTypeHint
- - SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
- - SlevomatCodingStandard.TypeHints.ReturnTypeHint
- - SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
- - SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable
- - SlevomatCodingStandard.Variables.UnusedVariable
- - SlevomatCodingStandard.Whitespaces.DuplicateSpaces
-
-### Squiz (34 sniffs)
- - Squiz.Arrays.ArrayBracketSpacing
- - Squiz.Arrays.ArrayDeclaration
- - Squiz.Classes.ClassFileName
- - Squiz.Classes.SelfMemberReference
- - Squiz.Classes.ValidClassName
- - Squiz.Commenting.DocCommentAlignment
- - Squiz.Commenting.EmptyCatchComment
- - Squiz.Commenting.FunctionComment
- - Squiz.ControlStructures.ControlSignature
- - Squiz.ControlStructures.ForEachLoopDeclaration
- - Squiz.ControlStructures.ForLoopDeclaration
- - Squiz.ControlStructures.LowercaseDeclaration
- - Squiz.Functions.FunctionDeclaration
- - Squiz.Functions.FunctionDeclarationArgumentSpacing
- - Squiz.Functions.LowercaseFunctionKeywords
- - Squiz.Functions.MultiLineFunctionDeclaration
- - Squiz.Operators.ValidLogicalOperators
- - Squiz.PHP.Eval
- - Squiz.PHP.GlobalKeyword
- - Squiz.PHP.Heredoc
- - Squiz.PHP.InnerFunctions
- - Squiz.PHP.LowercasePHPFunctions
- - Squiz.PHP.NonExecutableCode
- - Squiz.Scope.MethodScope
- - Squiz.Scope.StaticThisUsage
- - Squiz.Strings.DoubleQuoteUsage
- - Squiz.WhiteSpace.CastSpacing
- - Squiz.WhiteSpace.ControlStructureSpacing
- - Squiz.WhiteSpace.FunctionSpacing
- - Squiz.WhiteSpace.ObjectOperatorSpacing
- - Squiz.WhiteSpace.ScopeClosingBrace
- - Squiz.WhiteSpace.ScopeKeywordSpacing
- - Squiz.WhiteSpace.SemicolonSpacing
- - Squiz.WhiteSpace.SuperfluousWhitespace
+```xml
+<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+    <properties>
+        <property name="rootNamespaces" type="array">
+            <element key="app" value="BlogApp"/>
+        </property>
+    </properties>
+</rule>
+```

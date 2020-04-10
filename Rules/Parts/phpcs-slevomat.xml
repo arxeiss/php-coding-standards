@@ -30,10 +30,12 @@
             <property name="linesCountAfterLastUseWhenLastInClass" value="0"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/> <!-- Check for private properties which are never read, only written -->
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/> <!-- Replace static:: into self:: when class/method is final -->
     <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/> <!-- Disable empty comments -->
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/> <!-- Check valid inline @var doc -->
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/> <!-- Use single line comment for property -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/> <!-- Name explains it well -->
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"> <!-- Check useless nesting if return or exit is in scope -->
         <properties>
             <property name="ignoreStandaloneIfInScope" value="true"/>
@@ -44,6 +46,12 @@
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing"/> <!-- Return, break etc must have empty lines before, if not first in scope -->
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/> <!-- Disable parentheses for some PHP constructs like break, return, echo -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/> <!-- New must have () even when no params are passed -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"> <!-- Can fix too line length for ternary operator -->
+        <properties>
+            <property name="lineLengthLimit" value="120"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/> <!-- Use null coalesce ?? instead of ternary when possible -->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/> <!-- Check unreachable catch blocks -->
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/> <!-- \Exception should be \Throwable -->
@@ -79,11 +87,21 @@
     <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/> <!-- Disable write number with _ between thousands etc -->
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/> <!-- Empty lines around use statements -->
     <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/> <!-- No spaces after - (minus) when is meant as negative number -->
+    <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/> <!-- Disable $a = $a +1 but requires += etc -->
+    <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/> <!-- No space after ... operator -->
     <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/> <!-- Cannot call directly __invoke method -->
     <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/> <!-- In listed function ... must not be used -->
+    <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/> <!-- No spaces after references reference operator -->
     <rule ref="SlevomatCodingStandard.PHP.ShortList"/> <!-- Disable list() use [] -->
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/> <!-- Enforces using shorthand cast operators integer -> int -->
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/> <!-- Check extra semicolon which is superfluous -->
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses">
+        <properties>
+            <proerty name="ignoreComplexTernaryConditions" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/> <!-- Global variables are prohibited -->
+    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/> <!-- Check duplicate assignment into same variable -->
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/> <!-- Try to detect unused variables -->
     <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"> <!-- Detect duplicate spaces except assignment and comments -->
         <properties>
