@@ -97,7 +97,7 @@
     <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/> <!-- Check extra semicolon which is superfluous -->
     <rule ref="SlevomatCodingStandard.PHP.UselessParentheses">
         <properties>
-            <proerty name="ignoreComplexTernaryConditions" value="true"/>
+            <property name="ignoreComplexTernaryConditions" value="true"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/> <!-- Global variables are prohibited -->

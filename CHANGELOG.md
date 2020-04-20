@@ -2,7 +2,12 @@
 
 ## v0.6.x
 
-### v0.6.0 - NOT RELEASED YET
+### v0.6.1
+
+ - Fix typo in `phpcs-slevomat.xml` file
+ - Requires higher Slevomat coding standards with fixed bugs
+
+### v0.6.0
 
 > Requires Slevomat coding standards 6.3 or higher
 
