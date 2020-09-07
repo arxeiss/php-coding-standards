@@ -30,8 +30,8 @@
             <property name="linesCountAfterLastUseWhenLastInClass" value="0"/>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/> <!-- Check for private properties which are never read, only written -->
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/> <!-- Replace static:: into self:: when class/method is final -->
+    <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/> <!-- @deprecated has to have explanation -->
     <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/> <!-- Disable empty comments -->
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/> <!-- Check valid inline @var doc -->
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/> <!-- Use single line comment for property -->
@@ -47,6 +47,7 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing"/> <!-- Return, break etc must have empty lines before, if not first in scope -->
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/> <!-- Disable parentheses for some PHP constructs like break, return, echo -->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/> <!-- New must have () even when no params are passed -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition"/> <!-- Can fix when max line length of if, elseif, while, do-while is exceeded -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"> <!-- Can fix too line length for ternary operator -->
         <properties>
             <property name="lineLengthLimit" value="120"/>
@@ -57,6 +58,7 @@
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/> <!-- \Exception should be \Throwable -->
     <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/> <!-- Spacing around PHP 7.4 arrow functions -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/> <!-- Empty function must have a comment why is empty -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall"/> <!-- Can fix when max line length of function call is exceeded -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/> <!-- Use static closure if not using $this -->
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/> <!-- Check unused variable in use() for closure -->

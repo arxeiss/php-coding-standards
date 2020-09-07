@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.7.x
+
+### v0.7.0
+
+> Requires Slevomat coding standards 6.4 or higher
+
+**Added rules:**
+ - SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration
+ - SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition
+ - SlevomatCodingStandard.Functions.RequireMultiLineCall
+
+**Added strict rules:**
+ - SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition
+ - SlevomatCodingStandard.Functions.RequireSingleLineCall
+
+ **Removed rule:**
+ - SlevomatCodingStandard.Classes.UnusedPrivateElements - Is *deprecated*
+
 ## v0.6.x
 
 ### v0.6.1

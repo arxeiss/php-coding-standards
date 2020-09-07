@@ -100,8 +100,8 @@
  - SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
  - SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
  - SlevomatCodingStandard.Classes.TraitUseSpacing
- - SlevomatCodingStandard.Classes.UnusedPrivateElements
  - SlevomatCodingStandard.Classes.UselessLateStaticBinding
+ - SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration
  - SlevomatCodingStandard.Commenting.EmptyComment
  - SlevomatCodingStandard.Commenting.ForbiddenAnnotations
  - SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration
@@ -113,15 +113,19 @@
  - SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing
  - SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
  - SlevomatCodingStandard.ControlStructures.NewWithParentheses
+ - SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition
  - SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator
  - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
  - SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator
+ - SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition
  - SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn
  - SlevomatCodingStandard.ControlStructures.UselessTernaryOperator
  - SlevomatCodingStandard.Exceptions.DeadCatch
  - SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
  - SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
  - SlevomatCodingStandard.Functions.DisallowEmptyFunction
+ - SlevomatCodingStandard.Functions.RequireMultiLineCall
+ - SlevomatCodingStandard.Functions.RequireSingleLineCall
  - SlevomatCodingStandard.Functions.StaticClosure
  - SlevomatCodingStandard.Functions.TrailingCommaInCall
  - SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure

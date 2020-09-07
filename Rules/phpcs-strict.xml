@@ -43,12 +43,18 @@
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/> <!-- Only comparison in condition, no assignment -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/> <!-- Require ?: if possible -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition"> <!-- If condition can be placed on single line, it will force it -->
+        <properties>
+            <property name="alwaysForSimpleConditions" value="false"></property>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"> <!-- Check usage of if with only return true/false followed by return true/false -->
         <properties>
             <property name="assumeAllConditionExpressionsAreAlreadyBoolean" value="true"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/> <!-- Check when ternary operator can be shortened -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall"/> <!-- If function call can be placed on single line, it will force it -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/> <!-- Disallow use == or != and must use === and !== -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/> <!-- Disable use of $i++ must use $i += 1 etc.. -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"> <!-- File must have declare strict types with correct spacing -->
