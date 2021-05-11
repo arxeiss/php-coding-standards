@@ -20,4 +20,3 @@ nbproject
 
 ### Sublime Text ###
 *.sublime-*
-!*.sublime-project
