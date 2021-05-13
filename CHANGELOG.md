@@ -1,6 +1,27 @@
 # Changelog
 
+## v0.8.x
+
+### v0.8.0
+
+> Requires Slevomat coding standards 7.0 or higher
+
+**Added rules:**
+ - SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
+ - SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch
+ - SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
+
+**Added strict rules:**
+ - SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
+
+**Renamed rules:**
+ - SlevomatCodingStandard.Functions.TrailingCommaInCall into SlevomatCodingStandard.Functions.**Require**TrailingCommaInCall
+
 ## v0.7.x
+
+### v0.7.1
+
+Added support for PHP 8
 
 ### v0.7.0
 

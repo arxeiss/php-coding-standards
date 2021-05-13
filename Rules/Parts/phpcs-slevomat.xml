@@ -54,13 +54,16 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/> <!-- Use null coalesce ?? instead of ternary when possible -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator"/> <!-- Requires using ?-> operator -->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/> <!-- Check unreachable catch blocks -->
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/> <!-- \Exception should be \Throwable -->
+    <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/> <!-- Require non-capturing catch when the variable with exception is not used. -->
     <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/> <!-- Spacing around PHP 7.4 arrow functions -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/> <!-- Empty function must have a comment why is empty -->
     <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall"/> <!-- Can fix when max line length of function call is exceeded -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/> <!-- Use static closure if not using $this -->
-    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/> <!-- PHP 8.0+ add trailing comma in multiline function declaration -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/> <!-- Check unused variable in use() for closure -->
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/> <!-- Namespace use sort alphabetically -->
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/> <!-- Group use namespaces declaration is disallowed -->

@@ -116,18 +116,21 @@
  - SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition
  - SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator
  - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
+ - SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
  - SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator
  - SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition
  - SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn
  - SlevomatCodingStandard.ControlStructures.UselessTernaryOperator
  - SlevomatCodingStandard.Exceptions.DeadCatch
  - SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
+ - SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch
  - SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
  - SlevomatCodingStandard.Functions.DisallowEmptyFunction
  - SlevomatCodingStandard.Functions.RequireMultiLineCall
  - SlevomatCodingStandard.Functions.RequireSingleLineCall
+ - SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
  - SlevomatCodingStandard.Functions.StaticClosure
- - SlevomatCodingStandard.Functions.TrailingCommaInCall
+ - SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
  - SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
  - SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
  - SlevomatCodingStandard.Namespaces.DisallowGroupUse
@@ -164,6 +167,7 @@
  - SlevomatCodingStandard.TypeHints.PropertyTypeHint
  - SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
  - SlevomatCodingStandard.TypeHints.ReturnTypeHint
+ - SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
  - SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
  - SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable
  - SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable

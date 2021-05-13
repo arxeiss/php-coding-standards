@@ -59,7 +59,8 @@
     <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/> <!-- Disable use of $i++ must use $i += 1 etc.. -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"> <!-- File must have declare strict types with correct spacing -->
         <properties>
-            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+            <property name="linesCountBeforeDeclare" value="1"/>
+            <property name="linesCountAfterDeclare" value="1"/>
             <property name="spacesCountAroundEqualsSign" value="0"/>
         </properties>
     </rule>
@@ -79,6 +80,13 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/> <!-- Correct return type hint -->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation">
         <severity>0</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"> <!-- Checks format of union type hints -->
+        <properties>
+            <property name="withSpaces" value="false"/>
+            <property name="shortNullable" value="true"/>
+            <property name="nullPosition" value="last"/>
+        </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/> <!-- Disable comments for constants -->
 

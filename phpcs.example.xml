@@ -4,6 +4,8 @@
     <!-- Check folders -->
     <file>./app</file>
 
+    <config name="php_version" value="80000"/> <!-- Set target version, for 7.4 set to 70400 etc. -->
+
     <arg name="basepath" value="."/> <!-- Strip file basepath from report -->
     <arg name="colors"/> <!-- Show colors -->
     <arg value="p"/> <!-- Display progress in report -->
@@ -16,7 +18,7 @@
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
 
         <!-- trailing comma in function call is supported in PHP 7.3 and above, exclude if needed -->
-        <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
+        <exclude name="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
     </rule>
 
     <!-- Add set of strict rules if needed -->
@@ -24,4 +26,15 @@
         <rule ref="./vendor/arxeiss/coding-standards/Rules/phpcs-strict.xml">
         </rule>
     -->
+
+    <!-- Bring back Useless Annotation errors, which are normally ignored -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
+        <severity>5</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint.UselessAnnotation">
+        <severity>5</severity>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation">
+        <severity>5</severity>
+    </rule>
 </ruleset>
