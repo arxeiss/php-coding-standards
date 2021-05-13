@@ -5,6 +5,8 @@
     <file>./app</file>
 
     <config name="php_version" value="80000"/> <!-- Set target version, for 7.4 set to 70400 etc. -->
+    <!-- Uncomment to keep exit code equals to 0 on warnings -->
+    <!-- <config name="ignore_warnings_on_exit" value="1"/> -->
 
     <arg name="basepath" value="."/> <!-- Strip file basepath from report -->
     <arg name="colors"/> <!-- Show colors -->
