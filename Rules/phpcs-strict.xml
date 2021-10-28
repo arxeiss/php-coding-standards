@@ -4,6 +4,7 @@
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
     <!-- Generic -->
+    <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.Formatting.SpaceAfterNot"> <!-- Checks there is 0 lines after ! operator -->
         <properties>
             <property name="spacing" value="0"/>

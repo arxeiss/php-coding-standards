@@ -21,14 +21,18 @@
         <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch"/><!-- empty catch statements are allowed - Squiz check comment inside empty catch -->
     </rule>
     <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/> <!-- for without iterators can be while -->
+    <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/> <!-- Accidentally incrementing iterator of outer loop inside inner loop -->
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/> <!-- Disable if(true) etc... -->
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/> <!-- When final is for class and for method again -->
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/> <!-- When method only calls parent, nothing more -->
     <rule ref="Generic.Files.InlineHTML"/> <!-- Disables Inline HTML inside file -->
+    <rule ref="Generic.Functions.CallTimePassByReference"/> <!-- Cannot use reference in function call -->
     <rule ref="Generic.Formatting.NoSpaceAfterCast"/> <!-- Disable space after cast, ie (int) $var -->
     <rule ref="Generic.NamingConventions.ConstructorName"/> <!-- Check of usage old constructor naming -->
+    <rule ref="Generic.PHP.BacktickOperator"/> <!-- Backtick is used to call shell -->
     <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/> <!-- No chars before PHP opening tag  -->
     <rule ref="Generic.PHP.DeprecatedFunctions"/> <!-- Disable deprecated function -->
+    <rule ref="Generic.PHP.DiscourageGoto"/> <!-- goto cannot be used -->
     <rule ref="Generic.PHP.ForbiddenFunctions"> <!-- Ban listed functions -->
         <properties>
             <property name="forbiddenFunctions" type="array">
@@ -45,6 +49,7 @@
             <property name="allowMultiline" value="true"/> <!-- But splitting into multiple lines is allowed -->
         </properties>
     </rule>
+    <rule ref="Generic.VersionControl.GitMergeConflict"/> <!-- Detect git merge conflict artifacts -->
     <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing"> <!-- No extra spaces inside parentheses -->
         <properties>
             <property name="ignoreNewlines" value="true"/>

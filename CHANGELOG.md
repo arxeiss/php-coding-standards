@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.9.x
+
+### v0.9.0
+
+**Added rules:**
+ - Generic.CodeAnalysis.JumbledIncrementer
+ - Generic.Functions.CallTimePassByReference
+ - Generic.PHP.BacktickOperator
+ - Generic.PHP.DiscourageGoto
+ - Generic.VersionControl.GitMergeConflict
+ - SlevomatCodingStandard.Classes.ClassConstantVisibility
+ - SlevomatCodingStandard.Functions.UselessParameterDefaultValue
+
+**Added strict rules:**
+ - Generic.CodeAnalysis.ForLoopWithTestFunctionCall - *By default produce only a Warning*
+
 ## v0.8.x
 
 ### v0.8.0

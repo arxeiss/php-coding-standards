@@ -1,12 +1,14 @@
 # All used sniffs
 
-### Generic (37 sniffs)
+### Generic (43 sniffs)
  - Generic.Arrays.ArrayIndent
  - Generic.Arrays.DisallowLongArraySyntax
  - Generic.Classes.DuplicateClassName
  - Generic.CodeAnalysis.AssignmentInCondition
  - Generic.CodeAnalysis.EmptyStatement
  - Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
+ - Generic.CodeAnalysis.ForLoopWithTestFunctionCall
+ - Generic.CodeAnalysis.JumbledIncrementer
  - Generic.CodeAnalysis.UnconditionalIfStatement
  - Generic.CodeAnalysis.UnnecessaryFinalModifier
  - Generic.CodeAnalysis.UselessOverridingMethod
@@ -19,19 +21,23 @@
  - Generic.Formatting.DisallowMultipleStatements
  - Generic.Formatting.NoSpaceAfterCast
  - Generic.Formatting.SpaceAfterNot
+ - Generic.Functions.CallTimePassByReference
  - Generic.Functions.FunctionCallArgumentSpacing
  - Generic.NamingConventions.ConstructorName
  - Generic.NamingConventions.UpperCaseConstantName
+ - Generic.PHP.BacktickOperator
  - Generic.PHP.CharacterBeforePHPOpeningTag
  - Generic.PHP.DeprecatedFunctions
  - Generic.PHP.DisallowAlternativePHPTags
  - Generic.PHP.DisallowShortOpenTag
+ - Generic.PHP.DiscourageGoto
  - Generic.PHP.ForbiddenFunctions
  - Generic.PHP.LowerCaseConstant
  - Generic.PHP.LowerCaseKeyword
  - Generic.PHP.LowerCaseType
  - Generic.PHP.NoSilencedErrors
  - Generic.Strings.UnnecessaryStringConcat
+ - Generic.VersionControl.GitMergeConflict
  - Generic.WhiteSpace.ArbitraryParenthesesSpacing
  - Generic.WhiteSpace.DisallowSpaceIndent - *Depends on selected indentation configuration*
  - Generic.WhiteSpace.DisallowTabIndent - *Depends on selected indentation configuration*
@@ -89,6 +95,7 @@
  - SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
  - SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace
  - SlevomatCodingStandard.Arrays.TrailingArrayComma
+ - SlevomatCodingStandard.Classes.ClassConstantVisibility
  - SlevomatCodingStandard.Classes.ConstantSpacing
  - SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants
  - SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
@@ -132,6 +139,7 @@
  - SlevomatCodingStandard.Functions.StaticClosure
  - SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
  - SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
+ - SlevomatCodingStandard.Functions.UselessParameterDefaultValue
  - SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
  - SlevomatCodingStandard.Namespaces.DisallowGroupUse
  - SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions
