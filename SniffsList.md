@@ -200,6 +200,7 @@
  - Squiz.Functions.LowercaseFunctionKeywords
  - Squiz.Functions.MultiLineFunctionDeclaration
  - Squiz.Operators.ValidLogicalOperators
+ - Squiz.Operators.ComparisonOperatorUsage
  - Squiz.PHP.CommentedOutCode
  - Squiz.PHP.Eval
  - Squiz.PHP.GlobalKeyword
