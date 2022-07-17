@@ -5,6 +5,7 @@
 
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/> <!-- Multiline array must have trailing comma -->
     <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
+    <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing" /> <!-- Checks spacing for type hints for Enums -->
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility" /> <!-- Constants must have visibility operator -->
     <rule ref="SlevomatCodingStandard.Classes.ConstantSpacing"> <!-- Proper spacing for constants with and without docblock -->
         <properties>
@@ -63,6 +64,7 @@
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/> <!-- Empty function must have a comment why is empty -->
     <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall"/> <!-- Can fix when max line length of function call is exceeded -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse"/> <!-- PHP 8.0+ add trailing comma in multiline closure use declaration -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/> <!-- PHP 8.0+ add trailing comma in multiline function declaration -->
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/> <!-- Use static closure if not using $this -->
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/> <!-- Check unused variable in use() for closure -->

@@ -95,7 +95,9 @@
  - SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
  - SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace
  - SlevomatCodingStandard.Arrays.TrailingArrayComma
+ - SlevomatCodingStandard.Classes.BackedEnumTypeSpacing
  - SlevomatCodingStandard.Classes.ClassConstantVisibility
+ - SlevomatCodingStandard.Classes.ClassLength
  - SlevomatCodingStandard.Classes.ConstantSpacing
  - SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants
  - SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
@@ -103,6 +105,7 @@
  - SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
  - SlevomatCodingStandard.Classes.ModernClassNameReference
  - SlevomatCodingStandard.Classes.ParentCallSpacing
+ - SlevomatCodingStandard.Classes.PropertyDeclaration
  - SlevomatCodingStandard.Classes.PropertySpacing
  - SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
  - SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
@@ -131,13 +134,15 @@
  - SlevomatCodingStandard.Exceptions.DeadCatch
  - SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
  - SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch
+ - SlevomatCodingStandard.Files.FileLength
  - SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
  - SlevomatCodingStandard.Functions.DisallowEmptyFunction
  - SlevomatCodingStandard.Functions.RequireMultiLineCall
  - SlevomatCodingStandard.Functions.RequireSingleLineCall
+ - SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
+ - SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse
  - SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
  - SlevomatCodingStandard.Functions.StaticClosure
- - SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
  - SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
  - SlevomatCodingStandard.Functions.UselessParameterDefaultValue
  - SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
@@ -173,7 +178,6 @@
  - SlevomatCodingStandard.TypeHints.ParameterTypeHint
  - SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
  - SlevomatCodingStandard.TypeHints.PropertyTypeHint
- - SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
  - SlevomatCodingStandard.TypeHints.ReturnTypeHint
  - SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
  - SlevomatCodingStandard.TypeHints.UselessConstantTypeHint

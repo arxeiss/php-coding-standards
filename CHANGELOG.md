@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.10.x
+
+### v0.10.0
+
+> Requires Slevomat coding standards 8.3 or higher. Which supports PHP 7.2+, support for PHP 7.1 is removed.
+
+**Added rules:**
+- SlevomatCodingStandard.Classes.BackedEnumTypeSpacing
+- SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse
+
+
+**Added strict rules:**
+- SlevomatCodingStandard.Classes.ClassLength
+- SlevomatCodingStandard.Files.FileLength
+
+**Improved strict rules:**
+- SlevomatCodingStandard.Classes.PropertyDeclaration - set `checkPromoted` & `enableMultipleSpacesBetweenModifiersCheck` to true
+
+**Renamed rules:**
+ - SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing into SlevomatCodingStandard.Classes.PropertyDeclaration
+
+See more changes in Slevomat changelog: https://github.com/slevomat/coding-standard/releases/tag/8.0.0
+
 ## v0.9.x
 
 ### v0.9.0
