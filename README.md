@@ -48,12 +48,13 @@ Later more additional rules can be added. See *phpcs.example.xml*.
 
 ## Included sniffs
 
-See [SniffList](SniffsList.md)<br>
-There is no really good documentation for sniffs. I wrote one sentence explanation for each used sniff into XML files.
+See [SniffList](SniffsList.md), I wrote one sentence explanation for each used sniff into XML files.
 
-### More suggested
+Also Slevomat rules have some comments about in their repository Readme https://github.com/slevomat/coding-standard
 
-#### Check that Namespace matches file structure
+## More suggested
+
+## Check that Namespace matches file structure
 This is used from my own blog in Laravel, where main folder `app` is `BlogApp` namespace.
 
 ```xml
@@ -62,6 +63,30 @@ This is used from my own blog in Laravel, where main folder `app` is `BlogApp` n
         <property name="rootNamespaces" type="array">
             <element key="app" value="BlogApp"/>
         </property>
+    </properties>
+</rule>
+```
+
+## Since v0.11.0 `mixed` typehint is not required
+
+Explanation can be found here https://github.com/arxeiss/php-coding-standards/pull/6
+
+If you want to force linter to use `mixed` typehint, you can enable by adding this into phpcs.xml file.
+
+```xml
+<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"> <!-- Check correct type hints -->
+    <properties>
+        <property name="enableMixedTypeHint" value="true"/>
+    </properties>
+</rule>
+<rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"> <!-- Check type hint for class property -->
+    <properties>
+        <property name="enableMixedTypeHint" value="true"/>
+    </properties>
+</rule>
+<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"> <!-- Correct return type hint -->
+    <properties>
+        <property name="enableMixedTypeHint" value="true"/>
     </properties>
 </rule>
 ```
