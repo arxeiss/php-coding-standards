@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.11.x
+
+### v0.11.0
+
+**Breaking changes**
+
+In the following rules the `enableMixedTypeHint` is disabled.
+See explanation and details here: https://github.com/arxeiss/php-coding-standards/pull/6
+
+- SlevomatCodingStandard.TypeHints.ParameterTypeHint
+- SlevomatCodingStandard.TypeHints.PropertyTypeHint
+- SlevomatCodingStandard.TypeHints.ReturnTypeHint
+
 ## v0.10.x
 
 ### v0.10.0

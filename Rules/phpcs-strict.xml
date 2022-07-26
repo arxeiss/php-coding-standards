@@ -76,16 +76,28 @@
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/> <!-- Disable long type hints -->
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> <!-- Parameter must be nullable if has null default value -->
     <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/> <!-- In doc block |null must be last -->
-    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/> <!-- Check correct type hints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"> <!-- Check correct type hints -->
+        <properties>
+            <property name="enableMixedTypeHint" value="false"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
         <severity>0</severity>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/> <!-- Correct spacing for parameter type hints -->
-    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/> <!-- Check type hint for class property -->
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"> <!-- Check type hint for class property -->
+        <properties>
+            <property name="enableMixedTypeHint" value="false"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint.UselessAnnotation">
         <severity>0</severity>
     </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/> <!-- Correct return type hint -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"> <!-- Correct return type hint -->
+        <properties>
+            <property name="enableMixedTypeHint" value="false"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation">
         <severity>0</severity>
     </rule>
