@@ -15,16 +15,19 @@
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants"/> <!-- Disable static:: for constants -->
     <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/> <!-- Cannot be more constants on the same row -->
     <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/> <!-- Cannot be more properties on the same row -->
+    <rule ref="SlevomatCodingStandard.Classes.DisallowStringExpressionPropertyFetch"/> <!-- Simplify direct property name and not inside {} -->
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"> <!-- No empty lines in the start and end of class -->
         <properties>
             <property name="linesCountAfterOpeningBrace" value="0"/>
             <property name="linesCountBeforeClosingBrace" value="0"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Classes.EnumCaseSpacing"/> <!-- Spacing between enum cases -->
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/> <!-- Replace old get_called_class() etc via modern constructs -->
     <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing"/> <!-- Enforce empty lines around parent method call -->
     <rule ref="SlevomatCodingStandard.Classes.PropertySpacing"/> <!-- Proper spacing for property with and without docblock -->
     <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/> <!-- Method signature should be multiline if exceed 120 chars -->
+    <rule ref="SlevomatCodingStandard.Classes.RequireSelfReference"/> <!-- Use self instead of Class name -->
     <rule ref="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/> <!-- Method signature should be single line if does not exceed 120 chars -->
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing"> <!-- Spacing around use traits -->
         <properties>
@@ -33,11 +36,13 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/> <!-- Replace static:: into self:: when class/method is final -->
+    <rule ref="SlevomatCodingStandard.Commenting.AnnotationName"/> <!-- Checks correct annotation spelling -->
     <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/> <!-- @deprecated has to have explanation -->
     <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/> <!-- Disable empty comments -->
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/> <!-- Check valid inline @var doc -->
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/> <!-- Use single line comment for property -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/> <!-- Name explains it well -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator"/> <!-- ? and : must be on the beginning of line -->
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"> <!-- Check useless nesting if return or exit is in scope -->
         <properties>
             <property name="ignoreStandaloneIfInScope" value="true"/>
@@ -109,7 +114,13 @@
             <property name="ignoreComplexTernaryConditions" value="true"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Strings.DisallowVariableParsing"> <!-- How variables can be reference inside double quoted string -->
+        <properties>
+            <property name="disallowSimpleSyntax" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/> <!-- Global variables are prohibited -->
+    <rule ref="SlevomatCodingStandard.Variables.DisallowVariableVariable"/> <!-- Disallow double dollar etc -->
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/> <!-- Check duplicate assignment into same variable -->
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/> <!-- Try to detect unused variables -->
     <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"> <!-- Detect duplicate spaces except assignment and comments -->

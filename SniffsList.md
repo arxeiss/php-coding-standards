@@ -102,15 +102,19 @@
  - SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants
  - SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
  - SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
+ - SlevomatCodingStandard.Classes.DisallowStringExpressionPropertyFetch
  - SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
+ - SlevomatCodingStandard.Classes.EnumCaseSpacing
  - SlevomatCodingStandard.Classes.ModernClassNameReference
  - SlevomatCodingStandard.Classes.ParentCallSpacing
  - SlevomatCodingStandard.Classes.PropertyDeclaration
  - SlevomatCodingStandard.Classes.PropertySpacing
  - SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
+ - SlevomatCodingStandard.Classes.RequireSelfReference
  - SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
  - SlevomatCodingStandard.Classes.TraitUseSpacing
  - SlevomatCodingStandard.Classes.UselessLateStaticBinding
+ - SlevomatCodingStandard.Commenting.AnnotationName
  - SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration
  - SlevomatCodingStandard.Commenting.EmptyComment
  - SlevomatCodingStandard.Commenting.ForbiddenAnnotations
@@ -119,6 +123,7 @@
  - SlevomatCodingStandard.Commenting.UselessFunctionDocComment
  - SlevomatCodingStandard.ControlStructures.AssignmentInCondition
  - SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch
+ - SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator
  - SlevomatCodingStandard.ControlStructures.EarlyExit
  - SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing
  - SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
@@ -171,6 +176,7 @@
  - SlevomatCodingStandard.PHP.TypeCast
  - SlevomatCodingStandard.PHP.UselessSemicolon
  - SlevomatCodingStandard.PHP.UselessParentheses
+ - SlevomatCodingStandard.Strings.DisallowVariableParsing
  - SlevomatCodingStandard.TypeHints.DeclareStrictTypes
  - SlevomatCodingStandard.TypeHints.LongTypeHints
  - SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue
@@ -182,6 +188,7 @@
  - SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
  - SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
  - SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable
+ - SlevomatCodingStandard.Variables.DisallowVariableVariable
  - SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable
  - SlevomatCodingStandard.Variables.UnusedVariable
  - SlevomatCodingStandard.Whitespaces.DuplicateSpaces

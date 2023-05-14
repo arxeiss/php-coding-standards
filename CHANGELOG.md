@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.12.x
+
+### v0.12.0
+
+**Added rules:**
+- SlevomatCodingStandard.Classes.EnumCaseSpacing
+- SlevomatCodingStandard.Classes.DisallowStringExpressionPropertyFetch
+- SlevomatCodingStandard.Classes.RequireSelfReference
+- SlevomatCodingStandard.Commenting.AnnotationName
+- SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator
+- SlevomatCodingStandard.Strings.DisallowVariableParsing
+- SlevomatCodingStandard.Variables.DisallowVariableVariable
+
 ## v0.11.x
 
 ### v0.11.0
