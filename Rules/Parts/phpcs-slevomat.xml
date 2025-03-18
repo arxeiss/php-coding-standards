@@ -3,7 +3,6 @@
 
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
-    <rule ref="SlevomatCodingStandard.Arrays.ArrayAccess"/> <!-- No spaces between variable and [] or between []s -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/> <!-- Multiline array must have trailing comma -->
     <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
     <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing" /> <!-- Checks spacing for type hints for Enums -->

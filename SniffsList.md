@@ -142,6 +142,7 @@
  - SlevomatCodingStandard.Files.FileLength
  - SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
  - SlevomatCodingStandard.Functions.DisallowEmptyFunction
+ - SlevomatCodingStandard.Functions.NamedArgumentSpacing
  - SlevomatCodingStandard.Functions.RequireMultiLineCall
  - SlevomatCodingStandard.Functions.RequireSingleLineCall
  - SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
@@ -177,7 +178,9 @@
  - SlevomatCodingStandard.PHP.UselessSemicolon
  - SlevomatCodingStandard.PHP.UselessParentheses
  - SlevomatCodingStandard.Strings.DisallowVariableParsing
+ - SlevomatCodingStandard.TypeHints.ClassConstantTypeHint
  - SlevomatCodingStandard.TypeHints.DeclareStrictTypes
+ - SlevomatCodingStandard.TypeHints.DNFTypeHintFormat
  - SlevomatCodingStandard.TypeHints.LongTypeHints
  - SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue
  - SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition
@@ -185,7 +188,6 @@
  - SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
  - SlevomatCodingStandard.TypeHints.PropertyTypeHint
  - SlevomatCodingStandard.TypeHints.ReturnTypeHint
- - SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
  - SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
  - SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable
  - SlevomatCodingStandard.Variables.DisallowVariableVariable

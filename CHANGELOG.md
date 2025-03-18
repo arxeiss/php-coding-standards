@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.13.x
+
+### v0.13.0
+
+**Added rules:**
+- SlevomatCodingStandard.Functions.NamedArgumentSpacing
+
+**Added Strict rules:**
+- SlevomatCodingStandard.TypeHints.ClassConstantTypeHint
+- SlevomatCodingStandard.TypeHints.DNFTypeHintFormat (Replacing deprecated SlevomatCodingStandard.TypeHints.UnionTypeHintFormat)
+
+**Others**:
+- Minimum PHP version is 7.4
+
 ## v0.12.x
 
 ### v0.12.0
