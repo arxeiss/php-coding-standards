@@ -66,6 +66,7 @@
     <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall"/> <!-- If function call can be placed on single line, it will force it -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/> <!-- Disallow use == or != and must use === and !== -->
     <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/> <!-- Disable use of $i++ must use $i += 1 etc.. -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ClassConstantTypeHint"/> <!-- Requires type hint for class constants -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"> <!-- File must have declare strict types with correct spacing -->
         <properties>
             <property name="linesCountBeforeDeclare" value="1"/>
@@ -101,9 +102,10 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation">
         <severity>0</severity>
     </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"> <!-- Checks format of union type hints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat"> <!-- Checks format of union type hints -->
         <properties>
-            <property name="withSpaces" value="false"/>
+            <property name="withSpacesAroundOperators" value="no"/>
+            <property name="withSpacesInsideParentheses" value="no"/>
             <property name="shortNullable" value="true"/>
             <property name="nullPosition" value="last"/>
         </properties>

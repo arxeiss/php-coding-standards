@@ -3,6 +3,7 @@
 
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
+    <rule ref="SlevomatCodingStandard.Arrays.ArrayAccess"/> <!-- No spaces between variable and [] or between []s -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/> <!-- Multiline array must have trailing comma -->
     <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
     <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing" /> <!-- Checks spacing for type hints for Enums -->
@@ -67,6 +68,7 @@
     <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/> <!-- Require non-capturing catch when the variable with exception is not used. -->
     <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/> <!-- Spacing around PHP 7.4 arrow functions -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/> <!-- Empty function must have a comment why is empty -->
+    <rule ref="SlevomatCodingStandard.Functions.NamedArgumentSpacing"/> <!-- Verify spaces around names of arguments and values -->
     <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall"/> <!-- Can fix when max line length of function call is exceeded -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/> <!-- PHP 7.3+ add trailing comma in multiline function call -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse"/> <!-- PHP 8.0+ add trailing comma in multiline closure use declaration -->
