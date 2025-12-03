@@ -60,6 +60,7 @@
             <property name="lineLengthLimit" value="120"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/> <!-- ??= instead of $var = $var ?? $default -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/> <!-- Use null coalesce ?? instead of ternary when possible -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator"/> <!-- Requires using ?-> operator -->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/> <!-- Check unreachable catch blocks -->

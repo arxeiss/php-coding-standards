@@ -19,9 +19,7 @@
  - Generic.Files.LineEndings
  - Generic.Files.LineLength
  - Generic.Formatting.DisallowMultipleStatements
- - Generic.Formatting.NoSpaceAfterCast
  - Generic.Formatting.SpaceAfterNot
- - Generic.Functions.CallTimePassByReference
  - Generic.Functions.FunctionCallArgumentSpacing
  - Generic.NamingConventions.ConstructorName
  - Generic.NamingConventions.UpperCaseConstantName
@@ -130,6 +128,7 @@
  - SlevomatCodingStandard.ControlStructures.NewWithParentheses
  - SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition
  - SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator
+ - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator
  - SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
  - SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
  - SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator

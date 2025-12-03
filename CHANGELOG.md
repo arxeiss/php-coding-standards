@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.14.x
+
+### v0.14.0
+**Added rules:**
+- SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
+
+**Removed rules:**
+- Generic.Functions.CallTimePassByReference - was removed in PHPCS 4.0
+- Generic.Formatting.NoSpaceAfterCast - was removed in PHPCS 4.0
+
 ## v0.13.x
 
 ### v0.13.0

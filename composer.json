@@ -12,7 +12,7 @@
     ],
     "require": {
     	"php": "^7.4 || ^8.0",
-        "slevomat/coding-standard": "^8.16.0"
+        "slevomat/coding-standard": "^8.25.1"
     },
     "config": {
         "allow-plugins": {
