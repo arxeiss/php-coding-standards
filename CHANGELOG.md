@@ -2,6 +2,10 @@
 
 ## v0.14.x
 
+### v0.14.1
+**Removed rules:**
+- PSR12.Files.FileHeader - conflicts with SlevomatCodingStandard.Namespaces.UseSpacing
+
 ### v0.14.0
 **Added rules:**
 - SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator

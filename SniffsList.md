@@ -1,6 +1,6 @@
 # All used sniffs
 
-### Generic (43 sniffs)
+### Generic (42 sniffs)
  - Generic.Arrays.ArrayIndent
  - Generic.Arrays.DisallowLongArraySyntax
  - Generic.Classes.DuplicateClassName
@@ -56,14 +56,13 @@
  - PSR1.Files.SideEffects
  - PSR1.Methods.CamelCapsMethodName
 
-### PSR12 (16 sniffs)
+### PSR12 (15 sniffs)
  - PSR12.Classes.AnonClassDeclaration
  - PSR12.Classes.ClassInstantiation
  - PSR12.Classes.ClosingBrace
  - PSR12.ControlStructures.BooleanOperatorPlacement
  - PSR12.ControlStructures.ControlStructureSpacing
  - PSR12.Files.DeclareStatement
- - PSR12.Files.FileHeader
  - PSR12.Files.ImportStatement
  - PSR12.Files.OpenTag
  - PSR12.Functions.NullableTypeDeclaration
@@ -88,7 +87,7 @@
  - PSR2.Namespaces.NamespaceDeclaration
  - PSR2.Namespaces.UseDeclaration
 
-### SlevomatCodingStandard (79 sniffs)
+### SlevomatCodingStandard (104 sniffs)
  - SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
  - SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
  - SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace

@@ -9,7 +9,7 @@
     </rule>
     <rule ref="PSR12">
         <exclude name="PSR12.Traits.UseDeclaration.MultipleImport"/> <!-- Single use can import multiple traits -->
-        <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock"/> <!-- Handled more detailed by Slevomat rules -->
+        <exclude name="PSR12.Files.FileHeader"/> <!-- Handled more detailed by Slevomat rules -->
         <exclude name="PSR12.Files.ImportStatement.LeadingSlash"/> <!-- Handled by Slevomat with fixer -->
         <exclude name="PSR12.Keywords.ShortFormTypeKeywords.LongFound"/> <!-- Handled more detailed with Slevomat -->
     </rule>
